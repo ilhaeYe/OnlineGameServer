@@ -1,0 +1,31 @@
+//
+//  stdafx.pch
+//  OnlineGameServerProgramming
+//
+//  Created by 예일해 on 2018. 7. 6..
+//  Copyright © 2018년 RomanceDuck. All rights reserved.
+//
+
+#ifndef stdafx_pch
+#define stdafx_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#include <iostream>
+
+typedef int8_t  BYTE;
+typedef uint16_t WORD;
+typedef uint32_t DWORD;
+typedef unsigned char UCHAR;
+
+#define MAX_CHAR_SIZE 64
+#define SAFE_DELETE(ptr) if(ptr) { delete ptr; ptr = nullptr; }
+#define SAFE_DELETE_ARRAY(ptr) if(ptr) { delete[] ptr; ptr = nullptr; }
+
+// windows memory func
+#define CopyMemory(Destination,Source,Length) memcpy((Destination),(Source),(Length))
+#define ZeroMemory(Destination,Length) memset((Destination),0,(Length))
+
+
+#endif /* stdafx_pch */
