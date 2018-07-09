@@ -1,3 +1,3 @@
 # OnlineGameServerProgramming
-* for study
+* study for 4 weeks
 

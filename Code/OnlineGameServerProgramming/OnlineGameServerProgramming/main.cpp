@@ -6,19 +6,24 @@
 //  Copyright © 2018년 RomanceDuck. All rights reserved.
 //
 
-//#include "stdafx.pch"
-#include "CStream.hpp"
-#include "CMemoryPool.hpp"
-#include "CUser.hpp"
-#include "CCircularQueue.hpp"
-#include "CLog.hpp"
+#include "stdafx.pch"
+//#include "CUser.hpp"
+//#include "CStream.hpp"
+//#include "CMemoryPool.hpp"
+//#include "CCircularQueue.hpp"
+//#include "CLog.hpp"
+//#include "CCrypt.hpp"
+#include "CRandom.hpp"
 
 int main(int argc, const char * argv[]) {
-    
+
 //    ExampleCStream();
 //    ExampleCMemory();
 //    ExampleCCircular();
-    ExampleCLog();
+//    ExampleCLog();
+//    ExampleCrypt();
+    ExampleCRandom();
+
 
     return 0;
 }

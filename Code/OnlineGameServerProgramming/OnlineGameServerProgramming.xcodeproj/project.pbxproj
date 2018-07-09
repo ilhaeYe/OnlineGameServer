@@ -13,6 +13,8 @@
 		510055C120F0ED5F00ACB900 /* CMemoryPool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 510055BF20F0ED5F00ACB900 /* CMemoryPool.cpp */; };
 		510055C420F1C7EE00ACB900 /* CCircularQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 510055C220F1C7EE00ACB900 /* CCircularQueue.cpp */; };
 		510055C720F1D0FD00ACB900 /* CLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 510055C520F1D0FD00ACB900 /* CLog.cpp */; };
+		510055D020F2141300ACB900 /* CCrypt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 510055CE20F2141300ACB900 /* CCrypt.cpp */; };
+		51F5703120F3B42B00791CEA /* CRandom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 51F5702F20F3B42B00791CEA /* CRandom.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +43,11 @@
 		510055C320F1C7EE00ACB900 /* CCircularQueue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CCircularQueue.hpp; sourceTree = "<group>"; };
 		510055C520F1D0FD00ACB900 /* CLog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CLog.cpp; sourceTree = "<group>"; };
 		510055C620F1D0FD00ACB900 /* CLog.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CLog.hpp; sourceTree = "<group>"; };
+		510055CE20F2141300ACB900 /* CCrypt.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CCrypt.cpp; sourceTree = "<group>"; };
+		510055CF20F2141300ACB900 /* CCrypt.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CCrypt.hpp; sourceTree = "<group>"; };
+		510055D820F34D0000ACB900 /* CMultiThreadSync.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CMultiThreadSync.hpp; sourceTree = "<group>"; };
+		51F5702F20F3B42B00791CEA /* CRandom.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CRandom.cpp; sourceTree = "<group>"; };
+		51F5703020F3B42B00791CEA /* CRandom.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CRandom.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,11 +87,16 @@
 				510055BF20F0ED5F00ACB900 /* CMemoryPool.cpp */,
 				510055C020F0ED5F00ACB900 /* CMemoryPool.hpp */,
 				510055C220F1C7EE00ACB900 /* CCircularQueue.cpp */,
+				51F5702F20F3B42B00791CEA /* CRandom.cpp */,
+				51F5703020F3B42B00791CEA /* CRandom.hpp */,
 				510055C320F1C7EE00ACB900 /* CCircularQueue.hpp */,
 				510055C520F1D0FD00ACB900 /* CLog.cpp */,
 				510055C620F1D0FD00ACB900 /* CLog.hpp */,
 				510055BC20F0B72B00ACB900 /* CUser.cpp */,
 				510055BD20F0B72B00ACB900 /* CUser.hpp */,
+				510055CE20F2141300ACB900 /* CCrypt.cpp */,
+				510055CF20F2141300ACB900 /* CCrypt.hpp */,
+				510055D820F34D0000ACB900 /* CMultiThreadSync.hpp */,
 			);
 			path = OnlineGameServerProgramming;
 			sourceTree = "<group>";
@@ -145,9 +157,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51F5703120F3B42B00791CEA /* CRandom.cpp in Sources */,
 				510055C720F1D0FD00ACB900 /* CLog.cpp in Sources */,
 				510055C420F1C7EE00ACB900 /* CCircularQueue.cpp in Sources */,
 				510055B120EE64E700ACB900 /* main.cpp in Sources */,
+				510055D020F2141300ACB900 /* CCrypt.cpp in Sources */,
 				510055B920EE650A00ACB900 /* CStream.cpp in Sources */,
 				510055C120F0ED5F00ACB900 /* CMemoryPool.cpp in Sources */,
 				510055BE20F0B72B00ACB900 /* CUser.cpp in Sources */,

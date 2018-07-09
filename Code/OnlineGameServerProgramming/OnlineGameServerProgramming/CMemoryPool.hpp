@@ -9,14 +9,19 @@
 #ifndef CMemoryPool_hpp
 #define CMemoryPool_hpp
 
+#include "CMultiThreadSync.hpp"
+
 template <class T, int ALLOC_BLOCK_SIZE = 50>
-class CMemoryPool {
+class CMemoryPool : public CMultiThreadSync<T>
+{
 using UCHAR = unsigned char;
 public:
     static void* operator new(std::size_t allocLength){
+        typename CMultiThreadSync<T>::CThreadSync Sync;
+        
         assert(sizeof(T) == allocLength);
         assert(sizeof(T) >= sizeof(UCHAR*));
-        
+
         if (!_ptr){
             allocBlock();
         }
@@ -31,6 +36,8 @@ public:
 
 private:
     static void allocBlock(){
+        typename CMultiThreadSync<T>::CThreadSync Sync;
+        
         _ptr = new UCHAR[sizeof(T) * ALLOC_BLOCK_SIZE];
         UCHAR** cur = reinterpret_cast<UCHAR**>(_ptr);
         UCHAR* next = _ptr;
@@ -39,10 +46,10 @@ private:
             *cur = next;
             cur = reinterpret_cast<UCHAR**>(next);
         }
-        
+
         *cur = nullptr;
     }
-    
+
 private:
     static UCHAR* _ptr;
 
